@@ -15,9 +15,9 @@ namespace StarChart.Controllers
 
         private readonly ApplicationDbContext _context;
 
-        public CelestialObjectController(DbContextOptions<ApplicationDbContext> options)
+        public CelestialObjectController(ApplicationDbContext dbContext)
         {
-            _context = new ApplicationDbContext(options);
+            _context = dbContext;
         }
 
     }
